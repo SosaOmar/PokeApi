@@ -1,0 +1,117 @@
+:root {
+    --carrito: #FCC5C0;
+    --grayParrafo: #595D62;
+    --rojo: #E94959;
+    --whithe: #FFFFFF;
+    --fonditos: #BFBFBF;
+    --black: #000;
+    --fondo_targeta: #eeeded;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: red;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.home-welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.img{
+    max-width: 676px;
+    display: flex;
+}
+
+.home-img{
+    width: 100%;
+}
+
+.home-pokestyle{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-pokestyle-red{
+    position: absolute;
+    bottom:40px;
+    width: 100%;
+    height: 35px;
+    background-color: red;
+    border-bottom: black solid 5px;
+}
+
+.home-pokestyle-white{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border-top: black solid 5px;
+}
+
+.home-pokestyle-circle1{
+    z-index: 100;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.home-pokestyle-circle2{
+    z-index: 200;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.home-welcomeh1{
+    color: var(--rojo);
+    font-size: 40px;
+}
+.home-form{
+    height: 50px;
+    max-width: 600px;
+    display: flex;
+}
+.home-button-login{
+    background-color: var(--rojo);
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    border-radius: 0em 1em  1em 0em;
+}
+
+.home-button-login:active{
+    transform: scale(0.9);
+}
+
+.home-input{
+    border: none;
+    padding: 0;
+    padding: 1em;
+    font-family: 'Inter', sans-serif;
+    border-radius: 1em 0  0 1em;
+}
+
+.home-input:active{
+    border: none;
+}

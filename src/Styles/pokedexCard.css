@@ -1,0 +1,340 @@
+/* :root {
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: gray;
+}
+.information-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+    padding: 0;
+}
+
+.information-li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100px;
+    text-align: center;
+    color: gray;
+}
+
+.information-ul-1{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+}
+
+
+.cards-pokemons {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokedex-card {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: transform 300ms ease;
+}
+
+.pokedex-card:hover {
+    transform: scale(1.05);
+    transition: transform 300ms ease;
+}
+
+.pokedex-card__header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.pokedex-card__header img {
+    position: absolute;
+    top: -100px;
+}
+
+.pokedex-card img {
+    width: 150px;
+}
+
+.pokedex-card__background {
+    height: 100px;
+}
+
+.information {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.normal {
+    background-image: linear-gradient(180deg, #abab99, white);
+    border: solid 15px #d4d4c0;
+    color: #abab99;
+}
+
+.fire {
+    border: solid 15px #fc7256;
+    color: #fe4522;
+    background-image: linear-gradient(180deg, #fe4522, white);
+}
+
+.fighting {
+    border: solid 15px #ba5444;
+    color: #ba5444;
+    background-image: linear-gradient(180deg, #ba5444, white);
+}
+
+.flying {
+    border: solid 15px #9fadfd;
+    color: #8899ff;
+    background-image: linear-gradient(180deg, #8899ff, white);
+}
+
+.poison {
+    border: solid 15px #b36ea5;
+    color: #aa5599;
+    background-image: linear-gradient(180deg, #aa5599, white);
+}
+
+.ground {
+    border: solid 15px #dfc67e;
+    color: #dcbb54;
+    background-image: linear-gradient(180deg, #dcbb54, white);
+
+}
+
+.rock {
+    border: solid 15px #c0b687;
+    color: #bbab67;
+    background-image: linear-gradient(180deg, #bbab67, white);
+}
+
+.bug {
+    border: solid 15px #b6c25e;
+    color: #aabb22;
+    background-image: linear-gradient(180deg, #aabb22, white);
+}
+
+.ghost {
+    border: solid 15px #8383c2;
+    color: #6666bb;
+    background-image: linear-gradient(180deg, #6666bb, white);
+}
+
+.steel {
+    border: solid 15px #babac0;
+    color: #aaaabb;
+    background-image: linear-gradient(180deg, #aaaabb, white);
+}
+
+
+.water {
+    border: solid 15px #56a9fc;
+    color: #3399ff;
+    background-image: linear-gradient(180deg, #3399ff, white);
+}
+
+.electric {
+    border: solid 15px #fcdc7f;
+    color: #ffcd32;
+    background-image: linear-gradient(180deg, #ffcd32, white);
+}
+
+.psychic {
+    border: solid 15px #f879ac;
+    color: #ff5599;
+    background-image: linear-gradient(180deg, #ff5599, white);
+}
+
+.ice {
+    color: #94d8fa;
+    border: solid 15px #66ccff;
+    background-image: linear-gradient(180deg, #66ccff, white);
+}
+
+.dragon {
+    border: solid 15px #9386f0;
+    color: #7667ee;
+    background-image: linear-gradient(180deg, #7667ee, white);
+}
+
+.dark {
+    border: solid 15px #7c6257;
+    color: #775445;
+    background-image: linear-gradient(180deg, #775445, white);
+}
+
+.fairy {
+    border: solid 15px #ebb1ea;
+    color: #ef98ee;
+    background-image: linear-gradient(180deg, #ef98ee, white);
+}
+
+.grass {
+    border: solid 15px #b4dab6;
+    color: #82c8c6;
+    background-image: linear-gradient(180deg, #82c8c6, white);
+}
+
+.information__name {
+    margin: 50px 0 0 0;
+}
+
+.pokeball {
+    background-color: yellowgreen;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeball-red {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: red;
+}
+
+.pokeball-white {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+}
+
+.pokeball-circle1 {
+    z-index: 50;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.pokeball-circle2 {
+    z-index: 50;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.search-input {
+    height: 30px;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 0 0 0 10px;
+
+}
+
+.search-button {
+    height: 30px;
+    border: 0;
+    background-color: var(--rojo);
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.search-button:active {
+    transform: scale(0.9);
+    transition: transform 200ms ease;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.trainer-name {
+    color: red;
+}
+
+.pokemon-card__searchAndType{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.type_select{
+    height: 28px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    max-width: 300px;
+}
+
+.active-page {
+    background-color: red;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+.page{
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+.pagination__number{
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0 0 0;
+}
+
+.pagination-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.numberPages{
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
